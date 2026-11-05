@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Aurora Digital Agency - Professional business website offering web design, development and digital marketing services." />
+  <title>Aurora Digital Agency | Professional Business Website</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem('theme');
+        if (!t) { t = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'; }
+        document.documentElement.setAttribute('data-theme', t);
+      } catch (e) {}
+    })();
+  </script>
+  <link rel="stylesheet" href="style.css" />
+  <noscript><style>.reveal,.reveal-left,.reveal-right{opacity:1!important;transform:none!important;}</style></noscript>
+</head>
+<body>
+  <header class="site-header" id="siteHeader">
+    <div class="container nav-container">
+      <a href="#home" class="logo" aria-label="Aurora Digital Agency home">
+        <span class="logo-mark">A</span>
+        <span class="logo-text">Aurora<span>Digital</span></span>
+      </a>
+      <nav class="main-nav" id="mainNav" aria-label="Primary navigation">
+        <ul class="nav-list">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#services" class="nav-link">Services</a></li>
+          <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+          <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode" aria-pressed="false">
+        <svg class="icon-moon" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" fill="currentColor"/>
+        </svg>
+        <svg class="icon-sun" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
+          <circle cx="12" cy="12" r="4" fill="currentColor"/>
+          <g stroke="currentColor" stroke-width="2" stroke-linecap="round">
+            <line x1="12" y1="2" x2="12" y2="5"/>
+            <line x1="12" y1="19" x2="12" y2="22"/>
+            <line x1="2" y1="12" x2="5" y2="12"/>
+            <line x1="19" y1="12" x2="22" y2="12"/>
+            <line x1="4.22" y1="4.22" x2="6.34" y2="6.34"/>
+            <line x1="17.66" y1="17.66" x2="19.78" y2="19.78"/>
+            <line x1="4.22" y1="19.78" x2="6.34" y2="17.66"/>
+            <line x1="17.66" y1="6.34" x2="19.78" y2="4.22"/>
+          </g>
+        </svg>
+      </button>
+      <a href="#contact" class="btn btn-primary nav-cta">Get a Quote</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+  <section class="hero" id="home">
+    <div class="container hero-container">
+      <div class="hero-content">
+        <span class="eyebrow">Welcome to Aurora Digital</span>
+        <h1>We Build <span class="gradient-text">Digital Experiences</span> That Grow Your Business</h1>
+        <p class="hero-sub">
+          From modern websites to powerful digital strategies, we help brands stand out,
+          connect with customers, and achieve measurable results in today's competitive market.
+        </p>
+        <div class="hero-buttons">
+          <a href="#contact" class="btn btn-primary">Start Your Project</a>
+          <a href="#portfolio" class="btn btn-outline">View Our Work</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat">
+            <span class="stat-number" data-target="150">0</span><span class="stat-plus">+</span>
+            <span class="stat-label">Projects Delivered</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number" data-target="98">0</span><span class="stat-plus">%</span>
+            <span class="stat-label">Client Satisfaction</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number" data-target="12">0</span><span class="stat-plus">+</span>
+            <span class="stat-label">Years Experience</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-image-card">
+          <img src="images/hero.svg" alt="Aurora Digital Agency hero illustration" />
+        </div>
+        <div class="floating-badge badge-1">Fast Delivery</div>
+        <div class="floating-badge badge-2">5-Star Rated</div>
+      </div>
+    </div>
+    <div class="hero-wave">
+      <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
+        <path d="M0,60 C360,120 1080,0 1440,60 L1440,120 L0,120 Z" fill="#f8fafc"/>
+      </svg>
+    </div>
+  </section>
+  <section class="section about" id="about">
+    <div class="container about-container">
+      <div class="about-visual">
+        <div class="about-image">
+          <img src="images/about.svg" alt="About Aurora Digital Agency" />
+        </div>
+        <div class="about-badge">
+          <span class="badge-number">12+</span>
+          <span class="badge-text">Years of Excellence</span>
+        </div>
+      </div>
+      <div class="about-content">
+        <span class="eyebrow">About Us</span>
+        <h2 class="section-title">We Turn Ideas Into <span class="gradient-text">Digital Reality</span></h2>
+        <p>
+          Aurora Digital Agency is a full-service digital partner dedicated to helping businesses
+          of all sizes thrive online. We combine strategy, design, and technology to deliver
+          solutions that are beautiful, fast, and built to convert.
+        </p>
+        <p>
+          Our team of designers, developers, and marketers work closely with every client to
+          understand their goals and craft experiences that truly resonate with their audience.
+        </p>
+        <ul class="about-features">
+          <li><span class="check">✓</span> Tailored strategies for your unique business goals</li>
+          <li><span class="check">✓</span> Transparent communication and on-time delivery</li>
+          <li><span class="check">✓</span> Long-term support and continuous improvement</li>
+        </ul>
+        <a href="#contact" class="btn btn-primary">Learn More</a>
+      </div>
+    </div>
+  </section>
+  <section class="section services" id="services">
+    <div class="container">
+      <div class="section-header">
+        <span class="eyebrow">Our Services</span>
+        <h2 class="section-title">What We <span class="gradient-text">Offer</span></h2>
+        <p class="section-subtitle">Comprehensive digital solutions designed to elevate your brand and drive growth.</p>
+      </div>
+      <div class="services-grid">
+        <article class="service-card">
+          <div class="service-icon"><img src="images/icon-design.svg" alt="UI/UX Design icon" /></div>
+          <h3>UI/UX Design</h3>
+          <p>Beautiful, intuitive interfaces crafted to delight users and boost engagement across all devices.</p>
+          <a href="#contact" class="service-link">Learn more →</a>
+        </article>
+        <article class="service-card featured">
+          <div class="service-icon"><img src="images/icon-dev.svg" alt="Web Development icon" /></div>
+          <h3>Web Development</h3>
+          <p>Fast, secure, and scalable websites built with modern technologies and best practices.</p>
+          <a href="#contact" class="service-link">Learn more →</a>
+        </article>
+        <article class="service-card">
+          <div class="service-icon"><img src="images/icon-marketing.svg" alt="Digital Marketing icon" /></div>
+          <h3>Digital Marketing</h3>
+          <p>SEO, content, and campaigns that increase visibility, traffic, and conversions for your brand.</p>
+          <a href="#contact" class="service-link">Learn more →</a>
+        </article>
+      </div>
+    </div>
+  </section>
+  <section class="section why" id="why">
+    <div class="container">
+      <div class="section-header">
+        <span class="eyebrow">Why Choose Us</span>
+        <h2 class="section-title">The Aurora <span class="gradient-text">Advantage</span></h2>
+        <p class="section-subtitle">We don't just build websites — we build partnerships that last.</p>
+      </div>
+      <div class="why-grid">
+        <div class="why-card"><div class="why-number">01</div><h3>Strategy First</h3><p>Every project starts with research and a clear roadmap aligned to your business goals.</p></div>
+        <div class="why-card"><div class="why-number">02</div><h3>Quality Crafted</h3><p>Clean code, pixel-perfect design, and rigorous testing ensure a premium final product.</p></div>
+        <div class="why-card"><div class="why-number">03</div><h3>On-Time Delivery</h3><p>We respect deadlines and keep you informed at every milestone of the project.</p></div>
+        <div class="why-card"><div class="why-number">04</div><h3>Ongoing Support</h3><p>Post-launch maintenance, updates, and optimization to keep your site performing.</p></div>
+      </div>
+    </div>
+  </section>
+  <section class="section portfolio" id="portfolio">
+    <div class="container">
+      <div class="section-header">
+        <span class="eyebrow">Our Portfolio</span>
+        <h2 class="section-title">Recent <span class="gradient-text">Projects</span></h2>
+        <p class="section-subtitle">A selection of work we are proud to have delivered for our clients.</p>
+      </div>
+      <div class="portfolio-grid">
+        <article class="portfolio-card">
+          <div class="portfolio-image">
+            <img src="images/portfolio-1.svg" alt="E-Commerce Store project" />
+            <div class="portfolio-overlay"><a href="#contact" class="btn btn-small">View Details</a></div>
+          </div>
+          <div class="portfolio-info"><h3>E-Commerce Store</h3><p>Web Design &amp; Development</p></div>
+        </article>
+        <article class="portfolio-card">
+          <div class="portfolio-image">
+            <img src="images/portfolio-2.svg" alt="Corporate Website project" />
+            <div class="portfolio-overlay"><a href="#contact" class="btn btn-small">View Details</a></div>
+          </div>
+          <div class="portfolio-info"><h3>Corporate Website</h3><p>Branding &amp; Web Presence</p></div>
+        </article>
+        <article class="portfolio-card">
+          <div class="portfolio-image">
+            <img src="images/portfolio-3.svg" alt="Mobile App UI project" />
+            <div class="portfolio-overlay"><a href="#contact" class="btn btn-small">View Details</a></div>
+          </div>
+          <div class="portfolio-info"><h3>Mobile App UI</h3><p>UI/UX Design</p></div>
+        </article>
+      </div>
+    </div>
+  </section>
+  <section class="section testimonials" id="testimonials">
+    <div class="container">
+      <div class="section-header">
+        <span class="eyebrow">Testimonials</span>
+        <h2 class="section-title">What Clients <span class="gradient-text">Say</span></h2>
+        <p class="section-subtitle">Sample testimonials for portfolio demonstration purposes.</p>
+      </div>
+      <div class="testimonials-grid">
+        <article class="testimonial-card">
+          <div class="quote-mark">“</div>
+          <p class="testimonial-text">Aurora transformed our outdated website into a modern, high-converting platform. The team was professional, responsive, and delivered ahead of schedule.</p>
+          <div class="testimonial-author">
+            <img src="images/avatar-1.svg" alt="John Davis avatar" />
+            <div><h4>John Davis</h4><span>CEO, TechNova Inc.</span></div>
+          </div>
+          <div class="stars">★★★★★</div>
+        </article>
+        <article class="testimonial-card">
+          <div class="quote-mark">“</div>
+          <p class="testimonial-text">Excellent communication and stunning design. Our new site has doubled our online inquiries. Highly recommend their services to any growing business.</p>
+          <div class="testimonial-author">
+            <img src="images/avatar-2.svg" alt="Sarah Mitchell avatar" />
+            <div><h4>Sarah Mitchell</h4><span>Founder, BrightCart</span></div>
+          </div>
+          <div class="stars">★★★★★</div>
+        </article>
+        <article class="testimonial-card">
+          <div class="quote-mark">“</div>
+          <p class="testimonial-text">From strategy to launch, Aurora handled everything seamlessly. The attention to detail and quality of code were truly impressive.</p>
+          <div class="testimonial-author">
+            <img src="images/avatar-3.svg" alt="Alex Rivera avatar" />
+            <div><h4>Alex Rivera</h4><span>Marketing Director, Apex Brands</span></div>
+          </div>
+          <div class="stars">★★★★★</div>
+        </article>
+      </div>
+    </div>
+  </section>
+  <section class="section contact" id="contact">
+    <div class="container contact-container">
+      <div class="contact-info">
+        <span class="eyebrow">Contact Us</span>
+        <h2 class="section-title">Let's Build Something <span class="gradient-text">Great</span></h2>
+        <p>Have a project in mind? Reach out and let's discuss how we can help your business grow.</p>
+        <ul class="contact-details">
+          <li><span class="contact-icon">🌍</span> Based in Pakistan</li>
+          <li><span class="contact-icon">✉️</span> contact@yourcompany.com <em>(replace with your email)</em></li>
+          <li><span class="contact-icon">🕐</span> Mon–Fri, 9:00 AM – 6:00 PM (PKT)</li>
+        </ul>
+        <p class="contact-note">
+          <strong>Note:</strong> This contact form is a frontend-only demo for portfolio purposes.
+          It does not send real emails. To make it functional, connect it to a backend service or email API.
+        </p>
+        <div class="social-links">
+          <a href="#" aria-label="Facebook" class="social-link">f</a>
+          <a href="#" aria-label="Twitter" class="social-link">t</a>
+          <a href="#" aria-label="LinkedIn" class="social-link">in</a>
+          <a href="#" aria-label="Instagram" class="social-link">ig</a>
+        </div>
+      </div>
+      <form class="contact-form" id="contactForm" novalidate>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="John Doe" required />
+            <span class="error-msg" id="nameError"></span>
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="john@example.com" required />
+            <span class="error-msg" id="emailError"></span>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="+1 (555) 000-0000" />
+            <span class="error-msg" id="phoneError"></span>
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="Project inquiry" required />
+            <span class="error-msg" id="subjectError"></span>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Tell us about your project..." required></textarea>
+          <span class="error-msg" id="messageError"></span>
+        </div>
+        <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+        <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-col">
+        <a href="#home" class="logo footer-logo">
+          <span class="logo-mark">A</span>
+          <span class="logo-text">Aurora<span>Digital</span></span>
+        </a>
+        <p>Premium digital solutions for modern businesses. Strategy, design, and development under one roof.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#services">UI/UX Design</a></li>
+          <li><a href="#services">Web Development</a></li>
+          <li><a href="#services">Digital Marketing</a></li>
+          <li><a href="#contact">Get a Quote</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Follow Us</h4>
+        <div class="social-links footer-social">
+          <a href="#" aria-label="Facebook" class="social-link">f</a>
+          <a href="#" aria-label="Twitter" class="social-link">t</a>
+          <a href="#" aria-label="LinkedIn" class="social-link">in</a>
+          <a href="#" aria-label="Instagram" class="social-link">ig</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>© <span id="year"></span> Aurora Digital Agency. All rights reserved. | Sample portfolio project.</p>
+      </div>
+    </div>
+  </footer>
+  <a href="#home" class="back-to-top" id="backToTop" aria-label="Back to top">↑</a>
+  <script src="script.js"></script>
+</body>
+</html>
